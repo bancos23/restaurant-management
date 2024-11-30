@@ -1,3 +1,25 @@
+<?php
+/**
+ * @file employees.p.php
+ * @brief Employees Page
+ * @details
+ * This file generates an HTML table displaying a list of employees.
+ * 
+ * The table includes the following columns:
+ * - Employee number
+ * - Name (with a link to the employee's profile)
+ * - Group
+ * - Days off
+ * 
+ * The data is fetched from the `users` table in the database, ordered by the `group` column in descending order.
+ * 
+ * If no users are found, a message indicating "No users found" is displayed.
+ * 
+ * @package RestaurantManagement
+ * @author Gavris Nicolae
+ * @date 2024-11-30
+ */
+?>
 <div class="app-content">
     <div class="container-fluid">
         <div class="row">

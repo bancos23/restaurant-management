@@ -1,3 +1,35 @@
+<?php
+/**
+ * @file login.p.php
+ * @brief Login Page
+ * @details
+ * This file contains the login page for the restaurant management system.
+ * 
+ * @file /Users/eduhaidu/restaurant-management/inc/pages/login.p.php
+ * 
+ * @html
+ * The HTML structure includes:
+ * - Meta tags for character set, viewport, title, author, description, and keywords.
+ * - Links to external stylesheets for fonts, OverlayScrollbars, and Bootstrap Icons.
+ * - A login form with fields for username and password, and a "Remember Me" checkbox.
+ * - Links for "Forgot password" and "Register a new membership".
+ * - Scripts for OverlayScrollbars, Popper.js, Bootstrap, and AdminLTE.
+ * 
+ * @php
+ * The PHP code includes:
+ * - Displaying session messages.
+ * - Handling form submission for login.
+ * - Querying the database to verify user credentials.
+ * - Redirecting the user upon successful login or displaying an error message.
+ * 
+ * @dependencies
+ * - External stylesheets and scripts from jsDelivr CDN.
+ * - AdminLTE CSS and JS files.
+ * 
+ * @usage
+ * This file is used to render the login page where users can enter their credentials to access the restaurant management system.
+ */
+?>
 <html lang="en">
 	
 <head>

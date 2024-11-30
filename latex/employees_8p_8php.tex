@@ -1,0 +1,42 @@
+\doxysection{inc/pages/employees.p.\+php File Reference}
+\hypertarget{employees_8p_8php}{}\label{employees_8p_8php}\index{inc/pages/employees.p.php@{inc/pages/employees.p.php}}
+
+
+Employees Page.  
+
+
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_restaurant_management}{Restaurant\+Management}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{employees_8p_8php_abb0f8f809252372e25f48d52b63ef29d}\label{employees_8p_8php_abb0f8f809252372e25f48d52b63ef29d} 
+{\bfseries \$q} = Config\+::get\+Con()-\/$>$prepare("{}SELECT \texorpdfstring{$\ast$}{*} FROM users ORDER BY \`{}group\`{} DESC"{})
+\item 
+\Hypertarget{employees_8p_8php_a28005d22fa7ef2dfe215ad886b497d9c}\label{employees_8p_8php_a28005d22fa7ef2dfe215ad886b497d9c} 
+{\bfseries \$users} = \$q-\/$>$fetch\+All(PDO\+::\+FETCH\+\_\+\+OBJ)
+\item 
+\Hypertarget{employees_8p_8php_af789423037bbc89dc7c850e761177570}\label{employees_8p_8php_af789423037bbc89dc7c850e761177570} 
+{\bfseries \$count} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Employees Page. 
+
+This file generates an HTML table displaying a list of employees.
+
+The table includes the following columns\+:
+\begin{DoxyItemize}
+\item Employee number
+\item Name (with a link to the employee\textquotesingle{}s profile)
+\item Group
+\item Days off
+\end{DoxyItemize}
+
+The data is fetched from the {\ttfamily users} table in the database, ordered by the {\ttfamily group} column in descending order.
+
+If no users are found, a message indicating "{}\+No users found"{} is displayed. 

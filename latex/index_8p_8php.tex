@@ -1,0 +1,58 @@
+\doxysection{inc/pages/index.p.\+php File Reference}
+\hypertarget{index_8p_8php}{}\label{index_8p_8php}\index{inc/pages/index.p.php@{inc/pages/index.p.php}}
+
+
+Direct Chat Page.  
+
+
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_restaurant_management}{Restaurant\+Management}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Direct Chat Page. 
+
+This file contains the implementation of a direct chat feature for a restaurant management system. It includes both the HTML structure and the Java\+Script logic for sending and fetching messages.
+
+PHP Section\+:
+\begin{DoxyItemize}
+\item Checks if a user session is active.
+\item Displays a chat interface with a message input form.
+\item The sender\textquotesingle{}s username is retrieved from the session and included as a hidden input.
+\end{DoxyItemize}
+
+Java\+Script Section\+:
+\begin{DoxyItemize}
+\item Uses j\+Query to handle form submission and AJAX requests.
+\item Prevents the default form submission behavior and sends an AJAX POST request to \textquotesingle{}submit\+\_\+message\textquotesingle{} endpoint.
+\item On successful message submission, the input field is cleared and messages are fetched again.
+\item Fetches messages from the \textquotesingle{}fetch\+\_\+messages\textquotesingle{} endpoint every 2 seconds.
+\item Updates the chat body with new messages and scrolls to the bottom if new messages are added.
+\end{DoxyItemize}
+
+HTML Structure\+:
+\begin{DoxyItemize}
+\item A card component with a header, body, and footer.
+\item The body contains a div for displaying messages.
+\item The footer contains a form for sending new messages.
+\end{DoxyItemize}
+
+AJAX Endpoints\+:
+\begin{DoxyItemize}
+\item \textquotesingle{}submit\+\_\+message\textquotesingle{}\+: Handles the submission of new messages.
+\item \textquotesingle{}fetch\+\_\+messages\textquotesingle{}\+: Retrieves the latest messages for the chat.
+\end{DoxyItemize}
+
+Java\+Script Functions\+:
+\begin{DoxyItemize}
+\item fetch\+Messages()\+: Fetches and updates the chat messages.
+\item scroll\+Chat\+To\+Bottom()\+: Scrolls the chat body to the bottom.
+\end{DoxyItemize}
+
+Dependencies\+:
+\begin{DoxyItemize}
+\item j\+Query library (version 3.\+5.\+1) 
+\end{DoxyItemize}

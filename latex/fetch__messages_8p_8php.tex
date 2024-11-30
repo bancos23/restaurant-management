@@ -1,0 +1,45 @@
+\doxysection{inc/pages/fetch\+\_\+messages.p.\+php File Reference}
+\hypertarget{fetch__messages_8p_8php}{}\label{fetch__messages_8p_8php}\index{inc/pages/fetch\_messages.p.php@{inc/pages/fetch\_messages.p.php}}
+
+
+Fetch Messages Page.  
+
+
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_restaurant_management}{Restaurant\+Management}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fetch Messages Page. 
+
+This script handles fetching and displaying messages for a specific user group.
+
+It expects a POST request with the following parameter\+:
+\begin{DoxyItemize}
+\item \textquotesingle{}sender\textquotesingle{}\+: The ID of the user sending the request.
+\end{DoxyItemize}
+
+The script performs the following steps\+:
+\begin{DoxyEnumerate}
+\item Retrieves the group of the sender from the configuration.
+\item Prepares and executes a SQL query to fetch all messages for the group, ordered by time in ascending order.
+\item Fetches all messages as objects.
+\item Iterates through the messages and displays them in a chat format.
+\begin{DoxyItemize}
+\item If the message sender is the same as the request sender, it displays the message on the right side.
+\item Otherwise, it displays the message on the left side.
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+Each message includes\+:
+\begin{DoxyItemize}
+\item The sender\textquotesingle{}s full name (first and last name).
+\item The timestamp of the message.
+\item The sender\textquotesingle{}s profile image.
+\item The message content.
+\end{DoxyItemize}
+
+The script exits after processing the messages. 

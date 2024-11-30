@@ -1,3 +1,44 @@
+<?php
+/**
+ * @file index.p.php
+ * @brief Direct Chat Page
+ * @details
+ * This file contains the implementation of a direct chat feature for a restaurant management system.
+ * It includes both the HTML structure and the JavaScript logic for sending and fetching messages.
+ *
+ * PHP Section:
+ * - Checks if a user session is active.
+ * - Displays a chat interface with a message input form.
+ * - The sender's username is retrieved from the session and included as a hidden input.
+ *
+ * JavaScript Section:
+ * - Uses jQuery to handle form submission and AJAX requests.
+ * - Prevents the default form submission behavior and sends an AJAX POST request to 'submit_message' endpoint.
+ * - On successful message submission, the input field is cleared and messages are fetched again.
+ * - Fetches messages from the 'fetch_messages' endpoint every 2 seconds.
+ * - Updates the chat body with new messages and scrolls to the bottom if new messages are added.
+ *
+ * HTML Structure:
+ * - A card component with a header, body, and footer.
+ * - The body contains a div for displaying messages.
+ * - The footer contains a form for sending new messages.
+ *
+ * AJAX Endpoints:
+ * - 'submit_message': Handles the submission of new messages.
+ * - 'fetch_messages': Retrieves the latest messages for the chat.
+ *
+ * JavaScript Functions:
+ * - fetchMessages(): Fetches and updates the chat messages.
+ * - scrollChatToBottom(): Scrolls the chat body to the bottom.
+ *
+ * Dependencies:
+ * - jQuery library (version 3.5.1)
+ * 
+ * @package RestaurantManagement
+ * @author Bancos Gabriel
+ * @date 2024-11-30
+ */
+ ?>
 <?php if(isset($_SESSION['user'])) { ?>
 <div class="app-content">
     <div class="container-fluid"> 

@@ -1,0 +1,60 @@
+\doxysection{inc/pages/login.p.\+php File Reference}
+\hypertarget{login_8p_8php}{}\label{login_8p_8php}\index{inc/pages/login.p.php@{inc/pages/login.p.php}}
+
+
+Login Page.  
+
+
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{login_8p_8php_aec560672952713b8dc3af1f3a8bc9559}{Default}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Login Page. 
+
+This file contains the login page for the restaurant management system.
+
+@html The HTML structure includes\+:
+\begin{DoxyItemize}
+\item Meta tags for character set, viewport, title, author, description, and keywords.
+\item Links to external stylesheets for fonts, Overlay\+Scrollbars, and Bootstrap Icons.
+\item A login form with fields for username and password, and a "{}\+Remember Me"{} checkbox.
+\item Links for "{}\+Forgot password"{} and "{}\+Register a new membership"{}.
+\item Scripts for Overlay\+Scrollbars, Popper.\+js, Bootstrap, and Admin\+LTE.
+\end{DoxyItemize}
+
+@php The PHP code includes\+:
+\begin{DoxyItemize}
+\item Displaying session messages.
+\item Handling form submission for login.
+\item Querying the database to verify user credentials.
+\item Redirecting the user upon successful login or displaying an error message.
+\end{DoxyItemize}
+
+@dependencies
+\begin{DoxyItemize}
+\item External stylesheets and scripts from js\+Delivr CDN.
+\item Admin\+LTE CSS and JS files.
+\end{DoxyItemize}
+
+@usage This file is used to render the login page where users can enter their credentials to access the restaurant management system. 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{login_8p_8php_aec560672952713b8dc3af1f3a8bc9559}\index{login.p.php@{login.p.php}!Default@{Default}}
+\index{Default@{Default}!login.p.php@{login.p.php}}
+\doxysubsubsection{\texorpdfstring{Default}{Default}}
+{\footnotesize\ttfamily \label{login_8p_8php_aec560672952713b8dc3af1f3a8bc9559} 
+const Default}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ scrollbarTheme:\ \textcolor{stringliteral}{"{}os-\/theme-\/light"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ scrollbarAutoHide:\ \textcolor{stringliteral}{"{}leave"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ scrollbarClickScroll:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,47 @@
+\doxysection{inc/pages/profile.p.\+php File Reference}
+\hypertarget{profile_8p_8php}{}\label{profile_8p_8php}\index{inc/pages/profile.p.php@{inc/pages/profile.p.php}}
+
+
+Profile Page.  
+
+
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_restaurant_management}{Restaurant\+Management}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{profile_8p_8php_abb0f8f809252372e25f48d52b63ef29d}\label{profile_8p_8php_abb0f8f809252372e25f48d52b63ef29d} 
+{\bfseries \$q} = Config\+::get\+Con()-\/$>$prepare(\textquotesingle{}SELECT \texorpdfstring{$\ast$}{*} FROM \`{}users\`{} WHERE \`{}username\`{} = ?\textquotesingle{})
+\item 
+\Hypertarget{profile_8p_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}\label{profile_8p_8php_a6efc15b5a2314dd4b5aaa556a375c6d6} 
+{\bfseries \$data} = \$q-\/$>$fetch(PDO\+::\+FETCH\+\_\+\+OBJ)
+\item 
+\Hypertarget{profile_8p_8php_a0544c3fe466e421738dae463968b70ba}\label{profile_8p_8php_a0544c3fe466e421738dae463968b70ba} 
+{\bfseries else} \{
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Profile Page. 
+
+This script fetches and displays the profile information of a user based on the username provided in the URL.
+
+It performs the following steps\+:
+\begin{DoxyEnumerate}
+\item Prepares and executes a SQL query to fetch user details from the {\ttfamily users} table where the username matches the provided parameter.
+\item If no user is found, it redirects to a 404 page.
+\item If a user is found, it displays the user\textquotesingle{}s profile information including their full name, group, phone number, and email.
+\end{DoxyEnumerate}
+
+The profile information is displayed in a card format with the following details\+:
+\begin{DoxyItemize}
+\item Full name
+\item Group
+\item Phone number
+\item Email
+\end{DoxyItemize}
+
+If the user does not exist, a 404 error page is displayed. 

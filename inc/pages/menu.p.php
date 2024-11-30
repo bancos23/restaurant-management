@@ -1,3 +1,36 @@
+<?php
+/**
+ * @file menu.p.php
+ * @brief Menu Page
+ * @details
+ * This script fetches recipes and their ingredients from the database and displays them in a card layout.
+ * 
+ * The following steps are performed:
+ * 1. Prepare and execute a SQL query to fetch recipe names, supply names, quantities, and unit names.
+ * 2. Fetch all results as objects and group them by recipe name.
+ * 3. Iterate over the grouped recipes and display each recipe and its ingredients in a card format.
+ * 
+ * Database Tables:
+ * - recipies (r): Contains recipe information.
+ * - recipies_content (rc): Contains the relationship between recipes and supplies, including quantities and units.
+ * - supplies (s): Contains supply information.
+ * - units (u): Contains unit information.
+ * 
+ * HTML Structure:
+ * - A container with a row of cards, each representing a recipe.
+ * - Each card displays the recipe name and a list of ingredients with their quantities and units.
+ * - A pagination section at the bottom (currently static with only one page).
+ * 
+ * Dependencies:
+ * - Config::getCon(): A method to get the database connection.
+ * - PDO::FETCH_OBJ: Fetch mode to get results as objects.
+ * - FontAwesome icons for displaying utensils icon.
+ * 
+ * @package RestaurantManagement
+ * @author Eduard Haidu
+ * @date 2024-11-30
+ */
+?>
 <div class="app-content"> 
     <div class="container-fluid">
         <div class="row">

@@ -1,0 +1,77 @@
+\doxysection{inc/pages/menu.p.\+php File Reference}
+\hypertarget{menu_8p_8php}{}\label{menu_8p_8php}\index{inc/pages/menu.p.php@{inc/pages/menu.p.php}}
+
+
+Menu Page.  
+
+
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_restaurant_management}{Restaurant\+Management}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{menu_8p_8php_abb0f8f809252372e25f48d52b63ef29d}{\$q}}
+\item 
+\Hypertarget{menu_8p_8php_a321236633e453c5bfddbe3bae9161aa5}\label{menu_8p_8php_a321236633e453c5bfddbe3bae9161aa5} 
+{\bfseries \$recipies} = \$q-\/$>$fetch\+All(PDO\+::\+FETCH\+\_\+\+OBJ)
+\item 
+\Hypertarget{menu_8p_8php_aaed4e83dcdf86f8f32127e9428ceee05}\label{menu_8p_8php_aaed4e83dcdf86f8f32127e9428ceee05} 
+{\bfseries \$grouped\+Recipies} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Menu Page. 
+
+This script fetches recipes and their ingredients from the database and displays them in a card layout.
+
+The following steps are performed\+:
+\begin{DoxyEnumerate}
+\item Prepare and execute a SQL query to fetch recipe names, supply names, quantities, and unit names.
+\item Fetch all results as objects and group them by recipe name.
+\item Iterate over the grouped recipes and display each recipe and its ingredients in a card format.
+\end{DoxyEnumerate}
+
+Database Tables\+:
+\begin{DoxyItemize}
+\item recipies (r)\+: Contains recipe information.
+\item recipies\+\_\+content (rc)\+: Contains the relationship between recipes and supplies, including quantities and units.
+\item supplies (s)\+: Contains supply information.
+\item units (u)\+: Contains unit information.
+\end{DoxyItemize}
+
+HTML Structure\+:
+\begin{DoxyItemize}
+\item A container with a row of cards, each representing a recipe.
+\item Each card displays the recipe name and a list of ingredients with their quantities and units.
+\item A pagination section at the bottom (currently static with only one page).
+\end{DoxyItemize}
+
+Dependencies\+:
+\begin{DoxyItemize}
+\item Config\+::get\+Con()\+: A method to get the database connection.
+\item PDO\+::\+FETCH\+\_\+\+OBJ\+: Fetch mode to get results as objects.
+\item Font\+Awesome icons for displaying utensils icon. 
+\end{DoxyItemize}
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{menu_8p_8php_abb0f8f809252372e25f48d52b63ef29d}\index{menu.p.php@{menu.p.php}!\$q@{\$q}}
+\index{\$q@{\$q}!menu.p.php@{menu.p.php}}
+\doxysubsubsection{\texorpdfstring{\$q}{\$q}}
+{\footnotesize\ttfamily \label{menu_8p_8php_abb0f8f809252372e25f48d52b63ef29d} 
+\$q}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ Config::getCon()-\/>prepare(\textcolor{stringliteral}{"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ SELECT\ r.name\ as\ recipe\_name,\ s.name\ as\ supply\_name,\ rc.quantity,\ u.name\ as\ unit\_name}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ FROM\ recipies\ r}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ JOIN\ recipies\_content\ rc\ ON\ r.id\ =\ rc.recipie}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ JOIN\ supplies\ s\ ON\ rc.supply\ =\ s.id}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ JOIN\ units\ u\ ON\ rc.unit\ =\ u.id}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ "{}})}
+
+\end{DoxyCode}

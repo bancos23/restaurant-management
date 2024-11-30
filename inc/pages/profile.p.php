@@ -1,4 +1,30 @@
 <?php
+/**
+ * @file profile.p.php
+ * @brief Profile Page
+ * @details
+ * This script fetches and displays the profile information of a user based on the username provided in the URL.
+ * 
+ * It performs the following steps:
+ * 1. Prepares and executes a SQL query to fetch user details from the `users` table where the username matches the provided parameter.
+ * 2. If no user is found, it redirects to a 404 page.
+ * 3. If a user is found, it displays the user's profile information including their full name, group, phone number, and email.
+ * 
+ * The profile information is displayed in a card format with the following details:
+ * - Full name
+ * - Group
+ * - Phone number
+ * - Email
+ * 
+ * If the user does not exist, a 404 error page is displayed.
+ * 
+ * @package RestaurantManagement
+ * @author Mirth Kevin
+ * @date 2024-11-30
+ * 
+ */
+?>
+<?php
 $q = Config::getCon()->prepare('SELECT * FROM `users` WHERE `username` = ?');
 $q->execute(array(Config::getPage(1)));
 $data = $q->fetch(PDO::FETCH_OBJ);
