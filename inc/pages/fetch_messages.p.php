@@ -1,4 +1,32 @@
 <?php
+/**
+ * @file fetch_messages.p.php
+ * @brief Fetches messages for a given user and group from the database and displays them in a chat format.
+ * @details
+ * This script fetches messages for a given user and group from the database and displays them in a chat format.
+ * 
+ * It expects a POST request with the following parameter:
+ * - 'sender': The ID of the user sending the request.
+ * 
+ * The script performs the following steps:
+ * 1. Retrieves the group of the sender from the database.
+ * 2. Prepares and executes a SQL query to fetch all messages for the group, ordered by time in ascending order.
+ * 3. Fetches all messages as objects.
+ * 4. Iterates through the messages and displays them in a chat format.
+ *    - If the message sender is the same as the request sender, the message is displayed on the right side.
+ *    - Otherwise, the message is displayed on the left side.
+ * 
+ * Each message includes:
+ * - The sender's name (first and last name).
+ * - The timestamp of the message.
+ * - The sender's profile image.
+ * - The message content.
+ * 
+ * The script exits after processing the messages.
+ * @author Mirth Kevin
+ * @date 2024-11-30
+ */
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sender = $_POST['sender'];
     $group = Config::getData('users', 'group', $sender);

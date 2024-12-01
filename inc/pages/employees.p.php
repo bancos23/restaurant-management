@@ -1,3 +1,25 @@
+<?php
+/**
+ * @file employees.p.php
+ * @brief Displays a list of users with their details.
+ * @details
+ * This script generates a table displaying a list of users with their details.
+ * 
+ * The table includes the following columns:
+ * - ID (#)
+ * - Name (with a link to the user's profile)
+ * - Group
+ * - Days off
+ * 
+ * The data is fetched from the `users` table in the database and ordered by the `group` column in descending order.
+ * 
+ * If no users are found, a message "No users found." is displayed in the table.
+ * 
+ * @author Mirth Kevin
+ * @date 2024-11-30
+ */
+?>
+
 <div class="app-content">
     <div class="container-fluid">
         <div class="row">

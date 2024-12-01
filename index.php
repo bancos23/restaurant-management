@@ -8,7 +8,7 @@ ini_set('log_errors', 1);
 ini_set('error_log', 'error_log');
 
 spl_autoload_register(function ($class) {
-    include 'inc/' . $class . '.inc.php';
+    include_once 'inc/' . $class . '.inc.php';
 });
 
 Config::init()->getContent();

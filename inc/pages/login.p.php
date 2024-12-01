@@ -1,3 +1,41 @@
+<?php
+/**
+ * This file contains the login page for the application.
+ * 
+ * The login page includes:
+ * - HTML structure with meta tags for responsive design and SEO.
+ * - External CSS and JS libraries for styling and functionality.
+ * - A login form with username and password fields.
+ * - PHP code to handle form submission and user authentication.
+ * - Error message display for incorrect login attempts.
+ * - Links to forgot password and registration pages.
+ * 
+ * PHP Variables:
+ * - SITE_NAME: The name of the site, used in the title and header.
+ * - BASE_URL: The base URL of the site, used for linking CSS and JS files.
+ * - $_SESSION['msg']: Session variable to display messages.
+ * - $_POST['aLogin']: Form submission check.
+ * - $_POST['uName']: Username input from the form.
+ * - $_POST['uPass']: Password input from the form.
+ * 
+ * PHP Functions:
+ * - Config::getCon(): Returns the database connection.
+ * - Config::gotoPage(): Redirects to a specified page.
+ * 
+ * External Libraries:
+ * - @fontsource/source-sans-3: Font library.
+ * - overlayscrollbars: Custom scrollbar library.
+ * - bootstrap-icons: Icon library.
+ * - bootstrap: CSS framework.
+ * - adminlte: Admin dashboard template.
+ * 
+ * JavaScript:
+ * - OverlayScrollbars configuration for custom scrollbars.
+ * 
+ * @author Mirth Kevin
+ * @date 2024-11-5
+ */
+ ?>
 <html lang="en">
 	
 <head>

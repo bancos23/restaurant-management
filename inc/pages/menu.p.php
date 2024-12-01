@@ -21,8 +21,7 @@
 
     $groupedRecipies = [];
 
-    foreach ($recipies as $row) 
-    {
+    foreach ($recipies as $row) {
         $groupedRecipies[$row->recipe_name][] = $row;
     }
 

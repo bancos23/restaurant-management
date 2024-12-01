@@ -1,4 +1,35 @@
-<?php if(isset($_SESSION['user'])) { ?>
+<?php
+/**
+ * @file index.p.php
+ * @brief Chat interface for logged-in users.
+ * 
+ * @details This script handles a direct chat interface for logged-in users. 
+ * It provides the following functionalities:
+ * 
+ * - Displays a chat interface if a user session is active.
+ * - Allows users to send messages via a form submission.
+ * - Uses AJAX to submit messages and fetch new messages without reloading the page.
+ * - Automatically scrolls the chat to the bottom when new messages are received.
+ * - Periodically fetches new messages every 2 seconds.
+ * 
+ * ### HTML Structure:
+ * - A card component containing the chat interface.
+ * - A form for sending messages.
+ * 
+ * ### JavaScript Functionality:
+ * - Submits messages via AJAX to the 'submit_message' endpoint.
+ * - Fetches messages via AJAX from the 'fetch_messages' endpoint.
+ * - Updates the chat body with new messages.
+ * - Scrolls the chat to the bottom when new messages are added.
+ * - Periodically fetches new messages every 2 seconds.
+ * 
+ * ### Dependencies:
+ * - jQuery library (version 3.5.1).
+ * 
+ * @author Mirth Kevin
+ * @date 2024-11-30
+ */
+if(isset($_SESSION['user'])) { ?>
 <div class="app-content">
     <div class="container-fluid"> 
         <div class="row"> 
