@@ -23,7 +23,7 @@
  * - The message content.
  * 
  * The script exits after processing the messages.
- * @author Mirth Kevin
+ * @author Bancos Gabriel
  * @date 2024-11-30
  */
 

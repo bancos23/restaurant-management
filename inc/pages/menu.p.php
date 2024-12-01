@@ -1,3 +1,25 @@
+<?php
+/**
+ * @file menu.p.php
+ * @brief Displays a list of recipes with their ingredients.
+ * @details
+ * This script fetches recipes and their ingredients from the database and displays them in a card format.
+ * 
+ * The script performs the following steps:
+ * 1. Prepares and executes a SQL query to fetch recipe names, supply names, quantities, and unit names.
+ * 2. Fetches the results and groups them by recipe name.
+ * 3. Iterates over the grouped recipes and generates HTML to display each recipe and its ingredients in a card format.
+ * 
+ * The HTML structure includes:
+ * - A container for the main content.
+ * - A card for each recipe, displaying the recipe name and a list of ingredients.
+ * - A pagination section at the bottom of the page.
+ * 
+ * @author Bancos Gabriel
+ * @date 2024-11-30 
+ */
+?>
+
 <div class="app-content"> 
     <div class="container-fluid">
         <div class="row">

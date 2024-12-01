@@ -1,5 +1,8 @@
 <?php
 /**
+ * @file login.p.php
+ * @brief Login page for the application.
+ * @details
  * This file contains the login page for the application.
  * 
  * The login page includes:
@@ -32,12 +35,11 @@
  * JavaScript:
  * - OverlayScrollbars configuration for custom scrollbars.
  * 
- * @author Mirth Kevin
- * @date 2024-11-5
+ * @author Bancos Gabriel
+ * @date 2024-11-30
  */
  ?>
-<html lang="en">
-	
+<!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title><?php echo SITE_NAME ?> - Login</title>
@@ -93,10 +95,6 @@
                         </div> <!-- /.col -->
                     </div> <!--end::Row-->
                 </form>
-                <p class="mb-1"> <a href="forgot-password.html">I forgot my password</a> </p>
-                <p class="mb-0"> <a href="register.html" class="text-center">
-                        Register a new membership
-				</a> </p>
             </div> <!-- /.login-card-body -->
         </div>
     </div> <!-- /.login-box --> <!--begin::Third Party Plugin(OverlayScrollbars)-->
@@ -106,11 +104,6 @@
     <script src="<?php echo BASE_URL ?>assets/js/adminlte.js"></script> <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
     <script>
         const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
-        const Default = {
-            scrollbarTheme: "os-theme-light",
-            scrollbarAutoHide: "leave",
-            scrollbarClickScroll: true,
-        };
         document.addEventListener("DOMContentLoaded", function() {
             const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
             if (

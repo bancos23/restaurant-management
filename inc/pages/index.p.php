@@ -17,8 +17,8 @@
  * - A form for sending messages.
  * 
  * ### JavaScript Functionality:
- * - Submits messages via AJAX to the 'submit_message' endpoint.
- * - Fetches messages via AJAX from the 'fetch_messages' endpoint.
+ * - Submits messages via AJAX to the 'submit_message'.
+ * - Fetches messages via AJAX from the 'fetch_messages'.
  * - Updates the chat body with new messages.
  * - Scrolls the chat to the bottom when new messages are added.
  * - Periodically fetches new messages every 2 seconds.
@@ -26,7 +26,7 @@
  * ### Dependencies:
  * - jQuery library (version 3.5.1).
  * 
- * @author Mirth Kevin
+ * @author Bancos Gabriel
  * @date 2024-11-30
  */
 if(isset($_SESSION['user'])) { ?>

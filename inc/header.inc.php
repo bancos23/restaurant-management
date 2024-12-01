@@ -1,4 +1,13 @@
 <?php 
+/**
+ * @file header.inc.php
+ * @brief The header of the application.
+ * @details This file contains the header of the application. It includes the navigation bar and the sidebar of the application. It also includes the user information and the page title.
+ * @author Bancos Gabriel
+ * @date 2024-11-30
+ */
+
+
 ob_start();
 if(Config::getPage() == "fetch_messages" || Config::getPage() == "login") 
     return;

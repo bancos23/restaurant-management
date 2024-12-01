@@ -15,7 +15,7 @@
  * 
  * If no users are found, a message "No users found." is displayed in the table.
  * 
- * @author Mirth Kevin
+ * @author Bancos Gabriel
  * @date 2024-11-30
  */
 ?>

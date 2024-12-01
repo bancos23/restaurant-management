@@ -1,4 +1,13 @@
-<?php if(Config::getPage() != "login" && Config::getPage() != "admin") { ?>
+<?php 
+/**
+ * @file footer.inc.php
+ * @brief Footer for the application.
+ * @details This file contains the footer for the application. It is included at the end of the main content for all pages except the login and admin pages.
+ * @author Bancos Gabriel
+ * @date 2024-11-30
+ */
+
+if(Config::getPage() != "login" && Config::getPage() != "admin") { ?>
 </main>
 	<footer class="app-footer">
             <strong>Footer</strong>
