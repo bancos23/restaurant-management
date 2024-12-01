@@ -1,0 +1,19 @@
+#Ignore PHP error_log
+error_log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files and logs
+*.log
+*.tmp
+*.temp
+*.swp
+*.cache
+
+# Ignore docs
+/docs/*
+
+# Keep doxyfile in the repo
+!docs/Doxyfile
