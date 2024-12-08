@@ -2,9 +2,8 @@
     <php>
         <ini name="error_reporting" value="-1"/>
     </php>
-    <bootstrap>vendor/autoload.php</bootstrap>
     <testsuites>
-        <testsuite name="ExampleTestSuite">
+        <testsuite name="submit_message">
             <directory>inc/tests</directory>
         </testsuite>
     </testsuites>

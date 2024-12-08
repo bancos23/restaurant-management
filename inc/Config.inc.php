@@ -12,7 +12,7 @@ class Config {
     private static $g_con;
     private static $_url = array();
     
-    private function __construct() {
+    public function __construct() {
         self::initDatabase();
         self::initUrl();
     }

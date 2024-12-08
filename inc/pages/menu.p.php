@@ -30,6 +30,7 @@
  * @author Eduard Haidu
  * @date 2024-11-30
  */
+require 'inc/Config.inc.php';
 ?>
 <div class="app-content"> 
     <div class="container-fluid">
@@ -48,7 +49,6 @@
         JOIN supplies s ON rc.supply = s.id
         JOIN units u ON rc.unit = u.id
     ");
-
     $q->execute();
     $recipies = $q->fetchAll(PDO::FETCH_OBJ);
 
@@ -101,3 +101,7 @@
         </section>
     </div>
 </div>
+
+<?php 
+
+?>
