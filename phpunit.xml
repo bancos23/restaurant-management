@@ -6,5 +6,8 @@
         <testsuite name="submit_message">
             <directory>inc/tests</directory>
         </testsuite>
+        <testsuite name="login">
+            <directory>inc/tests</directory>
+        </testsuite>
     </testsuites>
 </phpunit>

@@ -1,8 +1,6 @@
-use PHPUnit\Framework\TestCase;
 
 <?php
-session_start();
-
+use PHPUnit\Framework\TestCase;
 
 class LoginTest extends TestCase
 {
@@ -68,7 +66,7 @@ class Config
 
     public static function gotoPage($page)
     {
-        // Simulate page redirection
+        // Redirect to the specified page
     }
 }
 ?>

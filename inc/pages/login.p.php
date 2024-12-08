@@ -34,7 +34,7 @@
 	
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title><?php echo SITE_NAME ?> - Login</title>
+    <title><?php echo defined('SITE_NAME') ? SITE_NAME : 'Restaurant Management' ?> - Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="AdminLTE 4 | Sidebar Mini">
     <meta name="author" content="ColorlibHQ">
@@ -43,14 +43,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous"><!--end::Fonts--><!--begin::Third Party Plugin(OverlayScrollbars)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/styles/overlayscrollbars.min.css" integrity="sha256-dSokZseQNT08wYEWiz5iLI8QPlKxG+TswNRD8k35cpg=" crossorigin="anonymous"><!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Third Party Plugin(Bootstrap Icons)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" integrity="sha256-Qsx5lrStHZyR9REqhUF8iQt73X06c8LGIUPzpOhwRrI=" crossorigin="anonymous"><!--end::Third Party Plugin(Bootstrap Icons)--><!--begin::Required Plugin(AdminLTE)-->
-    <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/css/adminlte.css">
+    <link rel="stylesheet" href="<?php echo defined('BASE URL') ? BASE_URL : 'localhost' ?>assets/css/adminlte.css">
 </head> 
 
 <body class="login-page bg-body-secondary">
     <div class="login-box">
         <div class="card card-outline card-primary">
-            <div class="card-header"> <a href="<?php echo BASE_URL ?>" class="link-dark text-center link-offset-2 link-opacity-100 link-opacity-50-hover">
-                    <h1 class="mb-0"> <?php echo SITE_NAME ?></h1>
+            <div class="card-header"> <a href="<?php echo defined('BASE_URL') ? BASE_URL : 'localhost' ?>" class="link-dark text-center link-offset-2 link-opacity-100 link-opacity-50-hover">
+                    <h1 class="mb-0"> <?php echo defined('SITE_NAME') ? SITE_NAME : 'Restaurant Management' ?></h1>
                 </a> </div>
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Sign in to start your session</p>

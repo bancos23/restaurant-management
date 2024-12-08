@@ -1,1 +1,1 @@
-{"version":1,"defects":{"SubmitMessageTest::testSubmit":7},"times":{"SubmitMessageTest::testSubmit":0.003}}
+{"version":1,"defects":{"SubmitMessageTest::testSubmit":7,"LoginTest::testSuccessfulLogin":7,"LoginTest::testFailedLogin":7},"times":{"SubmitMessageTest::testSubmit":0.003,"LoginTest::testSuccessfulLogin":0.004,"LoginTest::testFailedLogin":0}}
