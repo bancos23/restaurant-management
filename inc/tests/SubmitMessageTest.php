@@ -36,6 +36,7 @@ class SubmitMessageTest extends TestCase
         $this->submit();
 
         $this->assertEquals('test_sender', $_POST['sender']);
+        $this->assertEquals('test_message', $_POST['message']);
     }
 
     public function submit()
