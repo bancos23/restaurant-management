@@ -42,13 +42,13 @@ class SubmitMessageTest extends TestCase
     public function submit()
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $sender = $_POST['sender'] ?? '';
-            $message = $_POST['message'] ?? '';
+            $sender = $_POST['sender'] ?? 'test_sender';
+            $message = $_POST['message'] ?? 'test_message';
 
             if (!empty($message)) {
                 $stmt = $this->pdo->prepare('INSERT INTO messages (sender, data, message) VALUES (?, ?, ?)');
                 $stmt->execute([$sender, $this->config->getData(), $message]);
-                $_POST['message'] = '';
+                $_POST['message'] = 'test_message';
             }
         }
     }
