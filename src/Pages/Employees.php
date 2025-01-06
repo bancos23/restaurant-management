@@ -18,6 +18,15 @@
  * @author Bancos Gabriel
  * @date 2024-11-30
  */
+
+use App\Config\Config;
+use App\Config\Database;
+
+$dbConnection = Config::getDatabase();
+$q = $dbConnection->prepare("SELECT * FROM users ORDER BY `group` DESC");
+$q->execute();
+$users = $q->fetchAll(PDO::FETCH_OBJ);
+$count = 0;
 ?>
 
 <div class="app-content">
@@ -36,33 +45,22 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php
-                                $q = Config::getCon()->prepare("SELECT * FROM users ORDER BY `group` DESC");
-                                $q->execute();
-
-                                $users = $q->fetchAll(PDO::FETCH_OBJ);
-                                $count = 0;
-
-                                if (count($users) > 0) {
-                                    foreach ($users as $row) {
-                                        $count++;
-                                        ?>
+                                <?php if (count($users) > 0): ?>
+                                    <?php foreach ($users as $row): $count++; ?>
                                         <tr class="align-middle">
                                             <td><?php echo $count; ?></td>
-                                            <td><a href="<?php echo BASE_URL . 'profile/' . htmlspecialchars($row->username); ?>">
+                                            <td><a href="<?php echo $_ENV['BASE_URL'] . 'profile/' . htmlspecialchars($row->username); ?>">
                                                     <?php echo htmlspecialchars(join(" ", [$row->first_name, $row->last_name])); ?></a>
                                             </td>
-                                            <td><?php echo htmlspecialchars(Config::getData("groups", "name", $row->group)); ?></td>
-                                            <td><?php echo $row->days_off; ?></td>    
+                                            <td><?php echo htmlspecialchars(Database::getData("groups", "name", $row->group)); ?></td>
+                                            <td><?php echo $row->days_off; ?></td>
                                         </tr>
-                                    <?php
-                                    }
-                                } else {
-                                    ?>
+                                   <?php endforeach; ?>
+                                   <?php else: ?>
                                     <tr>
                                         <td colspan="3" class="text-center">No users found.</td>
                                     </tr>
-                                <?php } ?>
+                                <?php endif; ?>
                             </tbody>
                         </table>
                     </div>

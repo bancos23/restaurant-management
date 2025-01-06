@@ -7,10 +7,8 @@
  * @date 2024-11-30
  */
 
-
-unset($_SESSION['user']);
-$_SESSION['msg'] = '<div class="alert alert-warning"><i class="fa fa-check sign"></i>You have been logged out!</div>'; 
-Config::gotoPage(''); 
-session_destroy();
-return;
-?>
+use App\Controller\LogoutController;
+use App\Config\Config;
+ 
+$logoutController = new LogoutController();
+$logoutController->performLogout();

@@ -1,23 +1,25 @@
 <?php
 /**
- * @file menu.p.php
- * @brief Displays a list of recipes with their ingredients.
+ * @file profile.p.php
+ * @brief Displays a user's profile information.
  * @details
- * This script fetches recipes and their ingredients from the database and displays them in a card format.
+ * This script retrieves and displays a user's profile information based on the username provided in the URL.
  * 
- * The script performs the following steps:
- * 1. Prepares and executes a SQL query to fetch recipe names, supply names, quantities, and unit names.
- * 2. Fetches the results and groups them by recipe name.
- * 3. Iterates over the grouped recipes and generates HTML to display each recipe and its ingredients in a card format.
- * 
- * The HTML structure includes:
- * - A container for the main content.
- * - A card for each recipe, displaying the recipe name and a list of ingredients.
- * - A pagination section at the bottom of the page.
+ * - It prepares and executes a SQL query to fetch user data from the `users` table where the username matches the provided parameter.
+ * - If no user is found, it redirects to a 404 page.
+ * - If a user is found, it displays the user's profile information including their full name, group, phone number, and email.
  * 
  * @author Bancos Gabriel
- * @date 2024-11-30 
+ * @date 2024-11-30
  */
+
+use App\Config\Config;
+use App\Config\Database;
+use App\Controller\MenuController;
+
+$dbConnection = Config::getDatabase();
+$menuController = new MenuController($dbConnection);
+$groupedRecipies = $menuController->getGroupedRecipes();
 ?>
 
 <div class="app-content"> 
@@ -29,30 +31,13 @@
                     <div class="row">
 
                     <?php 
-
-    $q = Config::getCon()->prepare("
-        SELECT r.name as recipe_name, s.name as supply_name, rc.quantity, u.name as unit_name
-        FROM recipies r
-        JOIN recipies_content rc ON r.id = rc.recipie
-        JOIN supplies s ON rc.supply = s.id
-        JOIN units u ON rc.unit = u.id
-    ");
-
-    $q->execute();
-    $recipies = $q->fetchAll(PDO::FETCH_OBJ);
-
-    $groupedRecipies = [];
-
-    foreach ($recipies as $row) {
-        $groupedRecipies[$row->recipe_name][] = $row;
-    }
-
-    foreach ($groupedRecipies as $recipeName => $ingredients) {
-?>
-
+                    foreach ($groupedRecipies as $recipeName => $ingredients) {
+                    ?>
                         <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column mb-3">
                             <div class="card bg-light d-flex flex-fill">
-                                <div class="card-header text-muted border-bottom-0"><?php echo $recipeName; ?></div>
+                                <div class="card-header text-muted border-bottom-0">
+                                    <?php echo $recipeName; ?>
+                                </div>
                                 <div class="card-body pt-0">
                                     <div class="row">
                                         <div class="col-12">
@@ -71,9 +56,9 @@
                             </div>
                         </div>
 
-<?php 
+                    <?php 
                     } 
-?>
+                    ?>
                     </div>
                 </div>
 

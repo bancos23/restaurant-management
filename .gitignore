@@ -12,8 +12,11 @@ Thumbs.db
 *.swp
 *.cache
 
+.env
+
 # Ignore docs
 /docs/*
 
 # Keep doxyfile in the repo
 !docs/Doxyfile
+/vendor/

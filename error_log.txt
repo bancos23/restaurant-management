@@ -1,0 +1,371 @@
+[15-Dec-2024 17:20:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in C:\wamp64\www\src\Pages\Login.php:130
+Stack trace:
+#0 C:\wamp64\www\src\Config\Config.php(98): include_once()
+#1 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#2 {main}
+  thrown in C:\wamp64\www\src\Pages\Login.php on line 130
+[15-Dec-2024 17:20:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in C:\wamp64\www\src\Pages\Login.php:130
+Stack trace:
+#0 C:\wamp64\www\src\Config\Config.php(98): include_once()
+#1 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#2 {main}
+  thrown in C:\wamp64\www\src\Pages\Login.php on line 130
+[15-Dec-2024 17:22:01 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in C:\wamp64\www\src\Pages\Login.php:130
+Stack trace:
+#0 C:\wamp64\www\src\Config\Config.php(98): include_once()
+#1 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#2 {main}
+  thrown in C:\wamp64\www\src\Pages\Login.php on line 130
+[15-Dec-2024 17:29:43 UTC] PHP Warning:  Undefined array key 1 in C:\wamp64\www\src\Config\Config.php on line 108
+[15-Dec-2024 17:29:43 UTC] PHP Stack trace:
+[15-Dec-2024 17:29:43 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Dec-2024 17:29:43 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[15-Dec-2024 17:29:43 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[15-Dec-2024 17:29:43 UTC] PHP   4. App\Config\Config::getPage($index = 1) C:\wamp64\www\src\Pages\Profile.php:19
+[15-Dec-2024 17:29:43 UTC] PHP Warning:  Undefined array key 1 in C:\wamp64\www\src\Config\Config.php on line 108
+[15-Dec-2024 17:29:43 UTC] PHP Stack trace:
+[15-Dec-2024 17:29:43 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Dec-2024 17:29:43 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[15-Dec-2024 17:29:43 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[15-Dec-2024 17:29:43 UTC] PHP   4. App\Config\Config::getPage($index = 1) C:\wamp64\www\src\Pages\Profile.php:24
+[15-Dec-2024 17:29:43 UTC] PHP Warning:  Attempt to read property "first_name" on false in C:\wamp64\www\src\Pages\Profile.php on line 31
+[15-Dec-2024 17:29:43 UTC] PHP Stack trace:
+[15-Dec-2024 17:29:43 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Dec-2024 17:29:43 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[15-Dec-2024 17:29:43 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[15-Dec-2024 17:29:43 UTC] PHP Warning:  Attempt to read property "last_name" on false in C:\wamp64\www\src\Pages\Profile.php on line 31
+[15-Dec-2024 17:29:43 UTC] PHP Stack trace:
+[15-Dec-2024 17:29:43 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Dec-2024 17:29:43 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[15-Dec-2024 17:29:43 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[15-Dec-2024 17:29:43 UTC] PHP Warning:  Attempt to read property "first_name" on false in C:\wamp64\www\src\Pages\Profile.php on line 37
+[15-Dec-2024 17:29:43 UTC] PHP Stack trace:
+[15-Dec-2024 17:29:43 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Dec-2024 17:29:43 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[15-Dec-2024 17:29:43 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[15-Dec-2024 17:29:43 UTC] PHP Warning:  Attempt to read property "last_name" on false in C:\wamp64\www\src\Pages\Profile.php on line 37
+[15-Dec-2024 17:29:43 UTC] PHP Stack trace:
+[15-Dec-2024 17:29:43 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Dec-2024 17:29:43 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[15-Dec-2024 17:29:43 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[15-Dec-2024 17:29:43 UTC] PHP Warning:  Attempt to read property "group" on false in C:\wamp64\www\src\Pages\Profile.php on line 40
+[15-Dec-2024 17:29:43 UTC] PHP Stack trace:
+[15-Dec-2024 17:29:43 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Dec-2024 17:29:43 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[15-Dec-2024 17:29:43 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[15-Dec-2024 17:29:43 UTC] PHP Warning:  Attempt to read property "phone" on false in C:\wamp64\www\src\Pages\Profile.php on line 41
+[15-Dec-2024 17:29:43 UTC] PHP Stack trace:
+[15-Dec-2024 17:29:43 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Dec-2024 17:29:43 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[15-Dec-2024 17:29:43 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[15-Dec-2024 17:29:43 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64\www\src\Pages\Profile.php on line 41
+[15-Dec-2024 17:29:43 UTC] PHP Stack trace:
+[15-Dec-2024 17:29:43 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Dec-2024 17:29:43 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[15-Dec-2024 17:29:43 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[15-Dec-2024 17:29:43 UTC] PHP   4. htmlspecialchars($string = NULL) C:\wamp64\www\src\Pages\Profile.php:41
+[15-Dec-2024 17:29:43 UTC] PHP Warning:  Attempt to read property "email" on false in C:\wamp64\www\src\Pages\Profile.php on line 42
+[15-Dec-2024 17:29:43 UTC] PHP Stack trace:
+[15-Dec-2024 17:29:43 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Dec-2024 17:29:43 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[15-Dec-2024 17:29:43 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[15-Dec-2024 17:29:43 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64\www\src\Pages\Profile.php on line 42
+[15-Dec-2024 17:29:43 UTC] PHP Stack trace:
+[15-Dec-2024 17:29:43 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[15-Dec-2024 17:29:43 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[15-Dec-2024 17:29:43 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[15-Dec-2024 17:29:43 UTC] PHP   4. htmlspecialchars($string = NULL) C:\wamp64\www\src\Pages\Profile.php:42
+[16-Dec-2024 11:19:08 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in C:\wamp64\www\src\Pages\Login.php:130
+Stack trace:
+#0 C:\wamp64\www\src\Config\Config.php(98): include_once()
+#1 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#2 {main}
+  thrown in C:\wamp64\www\src\Pages\Login.php on line 130
+[16-Dec-2024 11:23:29 UTC] PHP Warning:  Undefined array key 1 in C:\wamp64\www\src\Config\Config.php on line 113
+[16-Dec-2024 11:23:29 UTC] PHP Stack trace:
+[16-Dec-2024 11:23:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 11:23:29 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 11:23:29 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:103
+[16-Dec-2024 11:23:29 UTC] PHP   4. App\Config\Config::getPage($index = 1) C:\wamp64\www\src\Pages\Profile.php:19
+[16-Dec-2024 11:23:29 UTC] PHP Warning:  Undefined array key 1 in C:\wamp64\www\src\Config\Config.php on line 113
+[16-Dec-2024 11:23:29 UTC] PHP Stack trace:
+[16-Dec-2024 11:23:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 11:23:29 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 11:23:29 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:103
+[16-Dec-2024 11:23:29 UTC] PHP   4. App\Config\Config::getPage($index = 1) C:\wamp64\www\src\Pages\Profile.php:24
+[16-Dec-2024 11:23:29 UTC] PHP Warning:  Attempt to read property "first_name" on false in C:\wamp64\www\src\Pages\Profile.php on line 31
+[16-Dec-2024 11:23:29 UTC] PHP Stack trace:
+[16-Dec-2024 11:23:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 11:23:29 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 11:23:29 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:103
+[16-Dec-2024 11:23:29 UTC] PHP Warning:  Attempt to read property "last_name" on false in C:\wamp64\www\src\Pages\Profile.php on line 31
+[16-Dec-2024 11:23:29 UTC] PHP Stack trace:
+[16-Dec-2024 11:23:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 11:23:29 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 11:23:29 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:103
+[16-Dec-2024 11:23:29 UTC] PHP Warning:  Attempt to read property "first_name" on false in C:\wamp64\www\src\Pages\Profile.php on line 37
+[16-Dec-2024 11:23:29 UTC] PHP Stack trace:
+[16-Dec-2024 11:23:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 11:23:29 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 11:23:29 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:103
+[16-Dec-2024 11:23:29 UTC] PHP Warning:  Attempt to read property "last_name" on false in C:\wamp64\www\src\Pages\Profile.php on line 37
+[16-Dec-2024 11:23:29 UTC] PHP Stack trace:
+[16-Dec-2024 11:23:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 11:23:29 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 11:23:29 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:103
+[16-Dec-2024 11:23:29 UTC] PHP Warning:  Attempt to read property "group" on false in C:\wamp64\www\src\Pages\Profile.php on line 40
+[16-Dec-2024 11:23:29 UTC] PHP Stack trace:
+[16-Dec-2024 11:23:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 11:23:29 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 11:23:29 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:103
+[16-Dec-2024 11:23:29 UTC] PHP Warning:  Attempt to read property "phone" on false in C:\wamp64\www\src\Pages\Profile.php on line 41
+[16-Dec-2024 11:23:29 UTC] PHP Stack trace:
+[16-Dec-2024 11:23:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 11:23:29 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 11:23:29 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:103
+[16-Dec-2024 11:23:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64\www\src\Pages\Profile.php on line 41
+[16-Dec-2024 11:23:29 UTC] PHP Stack trace:
+[16-Dec-2024 11:23:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 11:23:29 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 11:23:29 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:103
+[16-Dec-2024 11:23:29 UTC] PHP   4. htmlspecialchars($string = NULL) C:\wamp64\www\src\Pages\Profile.php:41
+[16-Dec-2024 11:23:29 UTC] PHP Warning:  Attempt to read property "email" on false in C:\wamp64\www\src\Pages\Profile.php on line 42
+[16-Dec-2024 11:23:29 UTC] PHP Stack trace:
+[16-Dec-2024 11:23:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 11:23:29 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 11:23:29 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:103
+[16-Dec-2024 11:23:29 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64\www\src\Pages\Profile.php on line 42
+[16-Dec-2024 11:23:29 UTC] PHP Stack trace:
+[16-Dec-2024 11:23:29 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 11:23:29 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 11:23:29 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:103
+[16-Dec-2024 11:23:29 UTC] PHP   4. htmlspecialchars($string = NULL) C:\wamp64\www\src\Pages\Profile.php:42
+[16-Dec-2024 12:49:03 UTC] PHP Warning:  Undefined array key "page" in C:\wamp64\www\src\Config\Config.php on line 95
+[16-Dec-2024 12:49:03 UTC] PHP Stack trace:
+[16-Dec-2024 12:49:03 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:49:03 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:49:03 UTC] PHP Warning:  Undefined array key "page" in C:\wamp64\www\src\Config\Config.php on line 95
+[16-Dec-2024 12:49:03 UTC] PHP Stack trace:
+[16-Dec-2024 12:49:03 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:49:03 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:49:03 UTC] PHP Warning:  Undefined array key "page" in C:\wamp64\www\src\Config\Config.php on line 95
+[16-Dec-2024 12:49:03 UTC] PHP Stack trace:
+[16-Dec-2024 12:49:03 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:49:03 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:49:05 UTC] PHP Warning:  Undefined array key "page" in C:\wamp64\www\src\Config\Config.php on line 95
+[16-Dec-2024 12:49:05 UTC] PHP Stack trace:
+[16-Dec-2024 12:49:05 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:49:05 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:49:07 UTC] PHP Warning:  Undefined array key "page" in C:\wamp64\www\src\Config\Config.php on line 95
+[16-Dec-2024 12:49:07 UTC] PHP Stack trace:
+[16-Dec-2024 12:49:07 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:49:07 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:49:09 UTC] PHP Warning:  Undefined array key "page" in C:\wamp64\www\src\Config\Config.php on line 95
+[16-Dec-2024 12:49:09 UTC] PHP Stack trace:
+[16-Dec-2024 12:49:09 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:49:09 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:49:11 UTC] PHP Warning:  Undefined array key "page" in C:\wamp64\www\src\Config\Config.php on line 95
+[16-Dec-2024 12:49:11 UTC] PHP Stack trace:
+[16-Dec-2024 12:49:11 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:49:11 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:23 UTC] PHP Warning:  Undefined variable $_url in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:23 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:23 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:23 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:23 UTC] PHP Warning:  Trying to access array offset on null in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:23 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:23 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:23 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:23 UTC] PHP Warning:  Undefined variable $_url in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:23 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:23 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:23 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:23 UTC] PHP Warning:  Trying to access array offset on null in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:23 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:23 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:23 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:24 UTC] PHP Warning:  Undefined variable $_url in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:24 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:24 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:24 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:24 UTC] PHP Warning:  Trying to access array offset on null in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:24 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:24 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:24 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:24 UTC] PHP Warning:  Undefined variable $_url in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:24 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:24 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:24 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:24 UTC] PHP Warning:  Trying to access array offset on null in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:24 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:24 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:24 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:24 UTC] PHP Warning:  Undefined variable $_url in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:24 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:24 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:24 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:24 UTC] PHP Warning:  Trying to access array offset on null in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:24 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:24 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:24 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:24 UTC] PHP Warning:  Undefined variable $_url in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:24 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:24 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:24 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:24 UTC] PHP Warning:  Trying to access array offset on null in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:24 UTC] PHP Stack trace:
+[16-Dec-2024 12:55:24 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[16-Dec-2024 12:55:24 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[16-Dec-2024 12:55:32 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:32 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:55:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Config\this" not found in C:\wamp64\www\src\Config\Config.php:97
+Stack trace:
+#0 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#1 {main}
+  thrown in C:\wamp64\www\src\Config\Config.php on line 97
+[16-Dec-2024 12:56:14 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controller\ProfileController::getUserData(), 0 passed in C:\wamp64\www\src\Pages\Profile.php on line 24 and exactly 1 expected in C:\wamp64\www\src\Controller\ProfileController.php:47
+Stack trace:
+#0 C:\wamp64\www\src\Pages\Profile.php(24): App\Controller\ProfileController->getUserData()
+#1 C:\wamp64\www\src\Config\Config.php(101): include_once('C:\\wamp64\\www\\s...')
+#2 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#3 {main}
+  thrown in C:\wamp64\www\src\Controller\ProfileController.php on line 47
+[16-Dec-2024 12:56:15 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controller\ProfileController::getUserData(), 0 passed in C:\wamp64\www\src\Pages\Profile.php on line 24 and exactly 1 expected in C:\wamp64\www\src\Controller\ProfileController.php:47
+Stack trace:
+#0 C:\wamp64\www\src\Pages\Profile.php(24): App\Controller\ProfileController->getUserData()
+#1 C:\wamp64\www\src\Config\Config.php(101): include_once('C:\\wamp64\\www\\s...')
+#2 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#3 {main}
+  thrown in C:\wamp64\www\src\Controller\ProfileController.php on line 47
+[16-Dec-2024 12:56:16 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controller\ProfileController::getUserData(), 0 passed in C:\wamp64\www\src\Pages\Profile.php on line 24 and exactly 1 expected in C:\wamp64\www\src\Controller\ProfileController.php:47
+Stack trace:
+#0 C:\wamp64\www\src\Pages\Profile.php(24): App\Controller\ProfileController->getUserData()
+#1 C:\wamp64\www\src\Config\Config.php(101): include_once('C:\\wamp64\\www\\s...')
+#2 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#3 {main}
+  thrown in C:\wamp64\www\src\Controller\ProfileController.php on line 47
+[16-Dec-2024 12:57:06 UTC] PHP Fatal error:  Uncaught TypeError: App\Controller\ProfileController::getUserData(): Return value must be of type object, false returned in C:\wamp64\www\src\Controller\ProfileController.php:52
+Stack trace:
+#0 C:\wamp64\www\src\Pages\Profile.php(24): App\Controller\ProfileController->getUserData('bancos2')
+#1 C:\wamp64\www\src\Config\Config.php(98): include_once('C:\\wamp64\\www\\s...')
+#2 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#3 {main}
+  thrown in C:\wamp64\www\src\Controller\ProfileController.php on line 52
+[16-Dec-2024 12:57:18 UTC] PHP Fatal error:  Uncaught TypeError: App\Controller\ProfileController::getUserData(): Return value must be of type object, false returned in C:\wamp64\www\src\Controller\ProfileController.php:52
+Stack trace:
+#0 C:\wamp64\www\src\Pages\Profile.php(27): App\Controller\ProfileController->getUserData('bancos2')
+#1 C:\wamp64\www\src\Config\Config.php(98): include_once('C:\\wamp64\\www\\s...')
+#2 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#3 {main}
+  thrown in C:\wamp64\www\src\Controller\ProfileController.php on line 52
+[16-Dec-2024 12:57:23 UTC] PHP Fatal error:  Uncaught TypeError: App\Controller\ProfileController::getUserData(): Return value must be of type object, false returned in C:\wamp64\www\src\Controller\ProfileController.php:52
+Stack trace:
+#0 C:\wamp64\www\src\Pages\Profile.php(27): App\Controller\ProfileController->getUserData('bancos2')
+#1 C:\wamp64\www\src\Config\Config.php(98): include_once('C:\\wamp64\\www\\s...')
+#2 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#3 {main}
+  thrown in C:\wamp64\www\src\Controller\ProfileController.php on line 52
+[16-Dec-2024 12:57:41 UTC] PHP Fatal error:  Uncaught TypeError: App\Controller\ProfileController::getUserData(): Return value must be of type object, false returned in C:\wamp64\www\src\Controller\ProfileController.php:52
+Stack trace:
+#0 C:\wamp64\www\src\Pages\Profile.php(27): App\Controller\ProfileController->getUserData('bancos2')
+#1 C:\wamp64\www\src\Config\Config.php(98): include_once('C:\\wamp64\\www\\s...')
+#2 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#3 {main}
+  thrown in C:\wamp64\www\src\Controller\ProfileController.php on line 52
+[02-Jan-2025 13:47:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in C:\wamp64\www\src\Pages\Login.php:130
+Stack trace:
+#0 C:\wamp64\www\src\Config\Config.php(98): include_once()
+#1 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#2 {main}
+  thrown in C:\wamp64\www\src\Pages\Login.php on line 130
+[05-Jan-2025 16:44:28 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in C:\wamp64\www\src\Pages\Login.php:130
+Stack trace:
+#0 C:\wamp64\www\src\Config\Config.php(98): include_once()
+#1 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#2 {main}
+  thrown in C:\wamp64\www\src\Pages\Login.php on line 130
+[05-Jan-2025 17:01:37 UTC] PHP Parse error:  syntax error, unexpected token "=" in C:\wamp64\www\src\Pages\Menu.php on line 24
+[05-Jan-2025 17:02:50 UTC] PHP Parse error:  syntax error, unexpected token "=" in C:\wamp64\www\src\Pages\Menu.php on line 24
+[05-Jan-2025 17:02:50 UTC] PHP Parse error:  syntax error, unexpected token "=" in C:\wamp64\www\src\Pages\Menu.php on line 24
+[05-Jan-2025 17:02:56 UTC] PHP Parse error:  syntax error, unexpected token "=" in C:\wamp64\www\src\Pages\Menu.php on line 24
+[05-Jan-2025 17:03:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\Config\Config::getCon() in C:\wamp64\www\src\Pages\Menu.php:31
+Stack trace:
+#0 C:\wamp64\www\src\Config\Config.php(98): include_once()
+#1 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#2 {main}
+  thrown in C:\wamp64\www\src\Pages\Menu.php on line 31
+[05-Jan-2025 17:03:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\Config\Config::getCon() in C:\wamp64\www\src\Pages\Menu.php:31
+Stack trace:
+#0 C:\wamp64\www\src\Config\Config.php(98): include_once()
+#1 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#2 {main}
+  thrown in C:\wamp64\www\src\Pages\Menu.php on line 31
+[05-Jan-2025 17:07:18 UTC] PHP Warning:  Undefined variable $groupedRecipies in C:\wamp64\www\src\Pages\Menu.php on line 34
+[05-Jan-2025 17:07:18 UTC] PHP Stack trace:
+[05-Jan-2025 17:07:18 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[05-Jan-2025 17:07:18 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[05-Jan-2025 17:07:18 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[05-Jan-2025 17:07:18 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\wamp64\www\src\Pages\Menu.php on line 34
+[05-Jan-2025 17:07:18 UTC] PHP Stack trace:
+[05-Jan-2025 17:07:18 UTC] PHP   1. {main}() C:\wamp64\www\index.php:0
+[05-Jan-2025 17:07:18 UTC] PHP   2. App\Config\Config->renderContent() C:\wamp64\www\index.php:17
+[05-Jan-2025 17:07:18 UTC] PHP   3. include_once() C:\wamp64\www\src\Config\Config.php:98
+[06-Jan-2025 17:10:24 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "BASE_URL" in C:\wamp64\www\src\Pages\Login.php:130
+Stack trace:
+#0 C:\wamp64\www\src\Config\Config.php(98): include_once()
+#1 C:\wamp64\www\index.php(17): App\Config\Config->renderContent()
+#2 {main}
+  thrown in C:\wamp64\www\src\Pages\Login.php on line 130

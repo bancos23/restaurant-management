@@ -1,14 +1,17 @@
 <?php
+
+require __DIR__.'/vendor/autoload.php';
+
 session_start();
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+ini_set('log_errors', '1');
+ini_set('error_log', __DIR__.'/error_log.txt');
 
-ini_set('log_errors', 1);
-ini_set('error_log', 'error_log');
+use App\Config\Config;
 
-spl_autoload_register(function ($class) {
-    include_once 'inc/' . $class . '.inc.php';
-});
+Config::getInstance();
 
-Config::init()->getContent();
+$config = Config::getInstance();
+$config->renderContent(); 

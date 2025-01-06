@@ -1,0 +1,27 @@
+{
+    "name": "bankeru/www",
+    "autoload": {
+        "psr-4": {
+            "Bankeru\\Www\\": "src/",
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bankeruCTW",
+            "email": "versaceadv69@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^3.6",
+        "mockery/mockery": "^1.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
